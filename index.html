@@ -1,8 +1,149 @@
 <html>
-  <head>
-    <title> Undertale Wiki</title>
-  </head>
-  <body>
-    
-  </body>
+    <head>
+        <title>
+            Undertale Wiki
+        </title>
+        <link rel="icon" type="image/png" href="undertale-red-soul-logo-png_seeklogo-475824.png">
+        <style>
+                @font-face {
+                    font-family: "Main";
+                    src: url("hachicro-undertale-font/HachicroUndertaleBattleFontRegular-L3zlg.ttf");
+                }
+                @font-face {
+                    font-family: "Subtitles";
+                    src: url("determination-mono-web-font/DeterminationSansWebRegular-369X.ttf");
+                }
+                body{
+                    background-image: url(Untitled.jpg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    background-attachment: fixed;
+                    background-color: black;
+                }
+                h1, h2{
+                    text-align: center;
+                    color: white;
+                    font-family: "Main";
+                }
+                h3, p{
+                    text-align: center;
+                    color: white;
+                    font-family: "Subtitles";
+                }
+                img{
+                    max-width: 500%;
+                    height: 100px;
+                    align-items: center;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding-top: 50px;
+                    box-shadow: 0 10px 25px rgba (0, 0, 0, 0.25);
+                }
+                img:hover{
+                    transform: scale(1.2);
+                }
+                a{
+                    align-items: center;
+                    color: white;
+                    font-family: "Subtitles";
+                    justify-content: center;
+                    display: flex;
+                }
+        </style>
+    </head>
+    <body>
+        <img src="Undertale-Logo-PNG-Background.png" alt="Undertale Logo Name" width="500px">
+        <div id="characters"></div>
+        <img src="Undyne_Alphys_overworld_wave.gif" width= 200px height=300px>
+        <h3> You Can Add any comments on My email below!!</h3>
+        <a href="mailto:sleemsayed65@gmail.com">!Send here!</a>
+    </body>
+    <script>
+        function Character(image, image_alt, Title, subtitle) {
+            return `
+            <img src="${image}" alt="${image_alt}" width="auto" height="auto">
+                <h1>
+                    ${Title}
+                </h1>
+                <h3> 
+                    ${subtitle}
+                </h3>
+                `;
+        }
+        document.getElementById("characters").innerHTML += Character(
+            "Images/Frisk_overworld.png",
+            "Frisk",
+            "Frisk/Player",
+            "Frisk is the playable character, main protagonist, and the eighth human in Undertale. After falling into the underground, they venture to return to the surface, whether neutrally, mercilessly, or peacefully. The True Pacifist Route is the only route where Frisk's name is revealed."
+        );
+
+        document.getElementById("characters").innerHTML += Character(
+            "Images/Flowey_overworld.png",
+            "Flowey",
+            "Flowey the Flower",
+            "Flowey is the first character that the protagonist meets in Undertale. He introduces the player to encounters by sharing \"friendliness pellets\", which are actually harmful bullets, revealing his philosophy of \"KILL or BE KILLED\". Flowey is the main antagonist of the Neutral Route and the True Pacifist Route, and could be considered the deuteragonist of the Genocide Route. A powered-up version of him serves as the final boss of the Neutral Route"
+        );
+
+        document.getElementById("characters").innerHTML += Character(
+            "Images/Toriel_overworld.png",
+            "Toriel",
+            "Toriel caretaker of the RUINS.",
+            "Toriel is a main character in Undertale. She rescues the protagonist from Flowey, and teaches them to avoid the dangers of the underground. Toriel is the former queen of monsters, the ex-wife of Asgore, the mother of Asriel, and the adoptive mother of the fallen human. She is also the first boss of the game, guarding the exit from the Ruins."
+        );
+        document.getElementById("characters").innerHTML += Character(
+            "Images/Sans_overworld.png",
+            "Sans",
+            "Sans the Skeleton.",
+            "Sans is the older brother of Papyrus and a main character in Undertale. When the protagonist exits the Ruins, Sans monitors them in Snowdin, then throughout their journey through the underground. At the Last Corridor, he delivers his judgment on the protagonist's actions. Afterwards, Sans always gives an ending call at the end of the Neutral Route. On the Genocide Route, Sans serves as the final boss when confronted in the Last Corridor"
+        );
+
+        document.getElementById("characters").innerHTML += Character(
+            "Images/Papyrus_overworld.png",
+            "Papyrus",
+            "Papyrus the Skeleton.",
+            "Papyrus is Sans's younger brother and a main character in Undertale. He wishes to become a Royal Guard to attain fame and friends; to this end, he patrols Snowdin and prepares many of its puzzles in hopes of capturing a human. Papyrus is also the game's second boss."
+        );
+
+        document.getElementById("characters").innerHTML += Character(
+            "Images/Undyne_overworld.png",
+            "Undyne",
+            "Undyne",
+            "Undyne is a main character in Undertale. She is the head of the Royal Guard. Undyne pursues the protagonist throughout Waterfall, though she is inadvertently thwarted by Monster Kid. She is the third boss of the game. On the Genocide Route, Undyne transforms into Undyne the Undying after the protagonist fatally wounds her in a single strike."
+        );
+        document.getElementById("characters").innerHTML += Character(
+            "Images/Alphys_overworld.png",
+            "Alphys",
+            "Alphys",
+            "Alphys is a main character in Undertale. She is the incumbent Royal Scientist, a position she was awarded by Asgore after the disappearance of her predecessor. She lives in her Lab in western Hotland."
+        );
+        document.getElementById("characters").innerHTML += Character(
+            "Images/Mettaton_overworld_talking.gif",
+            "Mettaton",
+            "Mettaton",
+            "Mettaton is a main character and the fourth boss in Undertale. He is a robot with a SOUL, whose body was built by Alphys. Mettaton is the sole television star of the underground, and he poses as an entertainment robot turned human-killing robot in Hotland. At the end of the CORE, Mettaton reveals his intentions to the protagonist and transforms into one of two forms for a final confrontation. On the Neutral and True Pacifist Routes, he transforms into Mettaton EX, and on the Genocide Route, he transforms into Mettaton NEO."
+        );
+
+        document.getElementById("characters").innerHTML += Character(
+            "Images/Asgore_Dreemurr_overworld.png",
+            "Asgore_Dremurr",
+            "Asgore Dremurr",
+            "Asgore Dreemurr is a main character and a secondary antagonist in Undertale. Asgore is the king of the underground and its Kingdom of Monsters. He plans to kill seven humans and use their SOULs to break the barrier and free monsterkind. He is the ex-husband of Toriel, father of Asriel, adoptive father of the fallen human, and the penultimate boss of the Neutral Route."
+        );
+
+        document.getElementById("characters").innerHTML += Character(
+            "Images/Asriel_Dreemurr_overworld.png",
+            "Asriel Dremurr",
+            "Asriel Dremurr",
+            "Asriel Dreemurr is the true form of Flowey, and the overarching antagonist of Undertale. As the biological child of Toriel and Asgore, he is the former prince of monsters, as well as being the best friend of the fallen human. At the end of all three routes, Asriel appears in one of his forms, and is the last monster the protagonist confronts. As Asriel, he serves as the final boss of the True Pacifist Route, replacing Asgore in New Home."
+        );
+
+        document.getElementById("characters").innerHTML += Character(
+            "Images/Chara_overworld.png",
+            "Chara",
+            "Chara",
+            "Chara, also known as the fallen human, is the first human to fall into the underground. They are the adoptive child of Toriel and Asgore, as well as Asriel's best friend and adoptive sibling. Their name varies according to what the player enters on the naming screen at the start of Undertale. Despite rarely being present on-screen, Chara serves a fundamental role in the game's plot as explained by the Dreemurrs' backstories, and is thus one of the game's main characters."
+        );
+    </script>
 </html>
